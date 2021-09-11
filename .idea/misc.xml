@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_console.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_empty_square.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_rank.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_tic_tac_toe.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_find_game.xml" value="0.21" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_game.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_login.xml" value="0.21" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_registro.xml" value="0.22512562814070353" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/content_game.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/dialog_game_over.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

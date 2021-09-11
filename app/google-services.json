@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "743062117663",
+    "project_id": "tictactoegame-31df8",
+    "storage_bucket": "tictactoegame-31df8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743062117663:android:5b1b6fc02c765aaf05a42a",
+        "android_client_info": {
+          "package_name": "com.example.tictactoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743062117663-ahl166f1dc15fjj8sed644g6215pa8t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTiRlii6mtPrZf_oLgNQ3IryPzRV-IZCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743062117663-ahl166f1dc15fjj8sed644g6215pa8t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743062117663:android:8e75d453664d057405a42a",
+        "android_client_info": {
+          "package_name": "com.example.tictactoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743062117663-jo23pvf9hh4usl7r0j3esjpjm9sabvh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tictactoe",
+            "certificate_hash": "2f81cf3ceb97d5a67c246742b3c742ec9a0d7f2e"
+          }
+        },
+        {
+          "client_id": "743062117663-ahl166f1dc15fjj8sed644g6215pa8t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTiRlii6mtPrZf_oLgNQ3IryPzRV-IZCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743062117663-ahl166f1dc15fjj8sed644g6215pa8t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
