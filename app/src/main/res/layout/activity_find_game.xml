@@ -78,7 +78,7 @@
                 android:layout_marginTop="32dp"
                 android:drawableLeft="@drawable/ic_console"
                 android:text="Jugar Online"
-                android:backgroundTint="#73c97c"
+                android:backgroundTint="#87CEEB"
                 android:textColor="#000"
                 android:padding="16dp"/>
 

@@ -337,7 +337,7 @@ public class FirstFragment extends Fragment {
 
         if (ganadorId.equals("EMPATE")){
             actualizarPuntos(1);
-            tvInfo.setText(jugadorName + " has emapatado!");
+            tvInfo.setText(jugadorName + " has empatado!");
             tvPuntos.setText("+1 punto");
         } else if (ganadorId.equals(uid)){
             actualizarPuntos(3);

@@ -5,15 +5,19 @@
       <map>
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_console.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_empty_square.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_player_one.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_player_two.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_rank.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_tic_tac_toe.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_find_game.xml" value="0.21" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_game.xml" value="0.1308876811594203" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_login.xml" value="0.21" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_ranking.xml" value="0.22" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_registro.xml" value="0.22512562814070353" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/content_game.xml" value="0.1308876811594203" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/dialog_game_over.xml" value="0.13451086956521738" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/item_ranking.xml" value="0.25" />
       </map>
     </option>
   </component>

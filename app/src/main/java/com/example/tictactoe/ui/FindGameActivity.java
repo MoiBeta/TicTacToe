@@ -67,7 +67,9 @@ public class FindGameActivity extends AppCompatActivity {
         binding.buttonRanking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                changeMenuVisibility(false);
+                Intent i = new Intent(FindGameActivity.this, RankingActivity.class);
+                startActivity(i);
             }
         });
     }
@@ -228,5 +230,11 @@ public class FindGameActivity extends AppCompatActivity {
                     });
         }
         super.onStop();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        this.finishAffinity();
     }
 }
