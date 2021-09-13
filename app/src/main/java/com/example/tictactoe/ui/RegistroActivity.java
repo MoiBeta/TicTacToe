@@ -1,22 +1,19 @@
 package com.example.tictactoe.ui;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.tictactoe.R;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.tictactoe.databinding.ActivityRegistroBinding;
 import com.example.tictactoe.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -50,13 +47,15 @@ public class RegistroActivity extends AppCompatActivity {
                 name = binding.editTextName.getText().toString().trim();
                 email = binding.editTextEmail.getText().toString().trim();
                 password = binding.editTextPassword.getText().toString().trim();
-                if (name.isEmpty()){
+                if (name.isEmpty()) {
                     binding.editTextName.setError("El nombre es necesario para continuar");
-                } else if(email.isEmpty()){
+                } else if (name.length() > 6) {
+                    binding.editTextName.setError("El nickname no puede ser mayor a 6 carateres");
+                } else if (email.isEmpty()) {
                     binding.editTextEmail.setError("El email es necesario para continuar");
-                } else if(password.isEmpty()){
+                } else if (password.isEmpty()) {
                     binding.editTextPassword.setError("La contraseña es necesaria para continuar");
-                } else{
+                } else {
                     changeVisibility(false);
                     createUser();
                 }

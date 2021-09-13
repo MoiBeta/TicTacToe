@@ -91,9 +91,24 @@
                 android:drawableLeft="@drawable/ic_rank"
                 android:backgroundTint="#ffd04a"
                 android:textColor="#000"
-                android:padding="16dp"/>
+                android:padding="16dp" />
 
         </LinearLayout>
     </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Botón para salir"
+        android:text="Cerrar sesión"
+        app:backgroundTint="@color/sky_blue"
+        app:icon="@drawable/ic_exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

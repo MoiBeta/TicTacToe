@@ -1,14 +1,14 @@
 package com.example.tictactoe.ui;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.tictactoe.app.Constants;
 import com.example.tictactoe.databinding.ActivityFindGameBinding;
@@ -25,8 +25,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.ListenerRegistration;
 import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.Objects;
 
 public class FindGameActivity extends AppCompatActivity {
     private ActivityFindGameBinding binding;
@@ -72,10 +70,21 @@ public class FindGameActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        binding.btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                firebaseAuth.signOut();
+                Intent i = new Intent(FindGameActivity.this, LoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
     }
 
     private void buscarPartida() {
         binding.textViewLoading.setText("Buscando partida libre");
+        binding.animationView.setAnimation("game_loading.json");
         binding.animationView.playAnimation();
 
         db.collection("jugadas")
@@ -200,6 +209,7 @@ public class FindGameActivity extends AppCompatActivity {
     private void changeMenuVisibility(boolean showMenu) {
         binding.layoutProgressbar.setVisibility(showMenu ? View.GONE : View.VISIBLE);
         binding.menuJuego.setVisibility(showMenu ? View.VISIBLE : View.GONE);
+        binding.btnExit.setVisibility(showMenu ? View.VISIBLE : View.GONE);
     }
 
     @Override
