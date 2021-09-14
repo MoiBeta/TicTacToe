@@ -1,4 +1,4 @@
-package com.example.tictactoe.app;
+package com.triqui.tictactoe.app;
 
 import android.app.Application;
 

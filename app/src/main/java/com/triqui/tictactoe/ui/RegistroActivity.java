@@ -1,4 +1,4 @@
-package com.example.tictactoe.ui;
+package com.triqui.tictactoe.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.tictactoe.databinding.ActivityRegistroBinding;
-import com.example.tictactoe.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -18,6 +16,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.triqui.tictactoe.databinding.ActivityRegistroBinding;
+import com.triqui.tictactoe.model.User;
 
 public class RegistroActivity extends AppCompatActivity {
     private ActivityRegistroBinding binding;

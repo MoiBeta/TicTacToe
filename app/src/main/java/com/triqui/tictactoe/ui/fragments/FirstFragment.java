@@ -1,4 +1,4 @@
-package com.example.tictactoe.ui.fragments;
+package com.triqui.tictactoe.ui.fragments;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -15,11 +15,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.tictactoe.R;
-import com.example.tictactoe.app.Constants;
-import com.example.tictactoe.databinding.FragmentFirstBinding;
-import com.example.tictactoe.model.User;
-import com.example.tictactoe.ui.Jugada;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,6 +24,11 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.ListenerRegistration;
+import com.triqui.tictactoe.R;
+import com.triqui.tictactoe.app.Constants;
+import com.triqui.tictactoe.databinding.FragmentFirstBinding;
+import com.triqui.tictactoe.model.User;
+import com.triqui.tictactoe.ui.Jugada;
 
 import java.util.ArrayList;
 import java.util.List;

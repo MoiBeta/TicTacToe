@@ -1,4 +1,4 @@
-package com.example.tictactoe.ui;
+package com.triqui.tictactoe.ui;
 
 import java.util.ArrayList;
 import java.util.Date;

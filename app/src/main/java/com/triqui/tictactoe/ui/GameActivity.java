@@ -1,27 +1,18 @@
-package com.example.tictactoe.ui;
+package com.triqui.tictactoe.ui;
 
 import android.os.Bundle;
-
-import com.example.tictactoe.R;
-import com.google.android.material.snackbar.Snackbar;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.view.View;
-import android.widget.ImageView;
-
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.tictactoe.databinding.ActivityGameBinding;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.ListenerRegistration;
-
-import java.util.ArrayList;
+import com.google.android.material.snackbar.Snackbar;
+import com.triqui.tictactoe.R;
+import com.triqui.tictactoe.databinding.ActivityGameBinding;
 
 public class GameActivity extends AppCompatActivity {
 

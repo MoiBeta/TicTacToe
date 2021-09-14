@@ -65,7 +65,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="No tienes una cuenta? Regístrate aquí!" />
+                android:text="No tienes una cuenta? Regístrate aquí!"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 

@@ -78,9 +78,9 @@
                 android:layout_marginTop="32dp"
                 android:drawableLeft="@drawable/ic_console"
                 android:text="Jugar Online"
-                android:backgroundTint="#87CEEB"
-                android:textColor="#000"
-                android:padding="16dp"/>
+                android:backgroundTint="@color/gray"
+                android:textColor="#FFF"
+                android:padding="16dp" />
 
             <Button
                 android:id="@+id/buttonRanking"
@@ -105,7 +105,9 @@
         android:layout_marginBottom="16dp"
         android:contentDescription="Botón para salir"
         android:text="Cerrar sesión"
-        app:backgroundTint="@color/sky_blue"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/gray"
+        app:iconTint="@color/white"
         app:icon="@drawable/ic_exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

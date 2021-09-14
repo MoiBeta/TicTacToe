@@ -1,4 +1,4 @@
-package com.example.tictactoe.ui;
+package com.triqui.tictactoe.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.tictactoe.app.Constants;
-import com.example.tictactoe.databinding.ActivityFindGameBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -25,6 +23,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.ListenerRegistration;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.triqui.tictactoe.app.Constants;
+import com.triqui.tictactoe.databinding.ActivityFindGameBinding;
 
 public class FindGameActivity extends AppCompatActivity {
     private ActivityFindGameBinding binding;

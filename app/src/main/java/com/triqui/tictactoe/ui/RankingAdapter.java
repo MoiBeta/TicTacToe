@@ -1,4 +1,4 @@
-package com.example.tictactoe.ui;
+package com.triqui.tictactoe.ui;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -7,8 +7,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.tictactoe.databinding.ItemRankingBinding;
-import com.example.tictactoe.model.User;
+import com.triqui.tictactoe.databinding.ItemRankingBinding;
+import com.triqui.tictactoe.model.User;
 
 import java.util.ArrayList;
 import java.util.List;

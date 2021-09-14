@@ -1,4 +1,4 @@
-package com.example.tictactoe.model;
+package com.triqui.tictactoe.model;
 
 public class User {
 

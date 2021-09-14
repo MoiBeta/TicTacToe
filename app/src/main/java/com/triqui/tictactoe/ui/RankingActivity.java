@@ -1,4 +1,4 @@
-package com.example.tictactoe.ui;
+package com.triqui.tictactoe.ui;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -7,14 +7,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.example.tictactoe.databinding.ActivityRankingBinding;
-import com.example.tictactoe.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.triqui.tictactoe.databinding.ActivityRankingBinding;
+import com.triqui.tictactoe.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
