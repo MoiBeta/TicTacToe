@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/btn_rank_shape.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/edit_text_shape.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_console.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_empty_square.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_exit.xml" value="0.23697916666666666" />
@@ -15,7 +17,7 @@
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/drawable/ic_tic_tac_toe_ic.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_find_game.xml" value="0.25" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_game.xml" value="0.16" />
-        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_login.xml" value="0.21" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_login.xml" value="0.3714859437751004" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_ranking.xml" value="0.22" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/activity_registro.xml" value="0.22512562814070353" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/content_game.xml" value="0.1308876811594203" />

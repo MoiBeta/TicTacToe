@@ -45,6 +45,17 @@
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edit_text_shape"
+                android:backgroundTint="@color/gray"
+                android:padding="16dp"
+                android:text="Cancelar"
+                android:textColor="#FFF" />
         </LinearLayout>
     </ScrollView>
 
@@ -57,6 +68,7 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
@@ -80,6 +92,7 @@
                 android:text="Jugar Online"
                 android:backgroundTint="@color/gray"
                 android:textColor="#FFF"
+                android:background="@drawable/edit_text_shape"
                 android:padding="16dp" />
 
             <Button
@@ -89,9 +102,10 @@
                 android:text="Ver Ranking"
                 android:layout_marginTop="16dp"
                 android:drawableLeft="@drawable/ic_rank"
-                android:backgroundTint="#ffd04a"
                 android:textColor="#000"
-                android:padding="16dp" />
+                android:background="@drawable/edit_text_shape"
+                android:padding="16dp"
+                app:backgroundTint="#ffd04a" />
 
         </LinearLayout>
     </ScrollView>

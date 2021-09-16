@@ -40,6 +40,7 @@
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text_shape"
                 android:minHeight="48dp" />
 
             <EditText
@@ -49,6 +50,7 @@
                 android:ems="10"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
+                android:background="@drawable/edit_text_shape"
                 android:minHeight="48dp" />
 
             <Button
@@ -68,6 +70,7 @@
                 android:text="No tienes una cuenta? Regístrate aquí!"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:background="@drawable/edit_text_shape"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>

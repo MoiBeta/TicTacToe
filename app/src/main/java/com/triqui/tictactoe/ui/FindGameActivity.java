@@ -80,6 +80,27 @@ public class FindGameActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        binding.buttonCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeMenuVisibility(true);
+                if (listenerRegistration != null) {
+                    listenerRegistration.remove();
+                }
+                if (!jugadaId.equals("")) {
+                    db.collection("jugadas")
+                            .document(jugadaId)
+                            .delete()
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    jugadaId = "";
+                                }
+                            });
+                }
+            }
+        });
     }
 
     private void buscarPartida() {

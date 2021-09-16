@@ -38,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Nombre"
                 android:inputType="textPersonName"
+                android:background="@drawable/edit_text_shape"
                 android:minHeight="48dp"/>
 
             <EditText
@@ -47,7 +48,8 @@
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape" />
 
             <EditText
                 android:id="@+id/editTextPassword"
@@ -56,7 +58,8 @@
                 android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:minHeight="48dp"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape" />
 
             <Button
                 android:id="@+id/buttonRegistro"
@@ -64,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Registrarse"
+                android:background="@drawable/edit_text_shape"
                 android:textColor="@color/white" />
         </LinearLayout>
     </ScrollView>
