@@ -7,7 +7,7 @@ import java.util.List;
 public class Jugada {
     private String jugadorUnoId, jugadorDosId;
     private List<Integer> celdasSeleccionadas;
-    private boolean turnoJuadorUno;
+    private boolean turnoJugadorUno;
     private String ganadorId;
     private Date created;
     private String abandonoId;
@@ -38,12 +38,21 @@ public class Jugada {
         this.celdasSeleccionadas = celdasSeleccionadas;
     }
 
-    public boolean isTurnoJuadorUno() {
-        return turnoJuadorUno;
+    public Jugada(String jugadorUnoId) {
+        this.jugadorUnoId = jugadorUnoId;
+        this.jugadorDosId = "";
+        this.celdasSeleccionadas = new ArrayList<>();
+        for (int i = 0; i < 9; i++) {
+            this.celdasSeleccionadas.add(new Integer(0));
+        }
+        this.turnoJugadorUno = true;
+        this.created = new Date();
+        this.ganadorId = "";
+        this.abandonoId = "";
     }
 
-    public void setTurnoJuadorUno(boolean turnoJuadorUno) {
-        this.turnoJuadorUno = turnoJuadorUno;
+    public boolean isTurnoJugadorUno() {
+        return turnoJugadorUno;
     }
 
     public String getGanadorId() {
@@ -70,16 +79,7 @@ public class Jugada {
         this.abandonoId = abandonoId;
     }
 
-    public Jugada(String jugadorUnoId){
-        this.jugadorUnoId = jugadorUnoId;
-        this.jugadorDosId = "";
-        this.celdasSeleccionadas = new ArrayList<>();
-        for(int i = 0; i<9; i++){
-            this.celdasSeleccionadas.add(new Integer(0));
-        }
-        this.turnoJuadorUno = true;
-        this.created = new Date();
-        this.ganadorId = "";
-        this.abandonoId = "";
+    public void setTurnoJugadorUno(boolean turnoJugadorUno) {
+        this.turnoJugadorUno = turnoJugadorUno;
     }
 }

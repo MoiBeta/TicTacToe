@@ -25,6 +25,7 @@ import com.google.firebase.firestore.ListenerRegistration;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.triqui.tictactoe.app.Constants;
 import com.triqui.tictactoe.databinding.ActivityFindGameBinding;
+import com.triqui.tictactoe.model.User;
 
 public class FindGameActivity extends AppCompatActivity {
     private ActivityFindGameBinding binding;
@@ -59,6 +60,14 @@ public class FindGameActivity extends AppCompatActivity {
             public void onClick(View view) {
                 changeMenuVisibility(false);
                 buscarPartida();
+            }
+        });
+
+        binding.buttonCompu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeMenuVisibility(false);
+                crearNuevaPartidaContraBot();
             }
         });
 
@@ -215,6 +224,7 @@ public class FindGameActivity extends AppCompatActivity {
             listenerRegistration.remove();
         }
         Intent i = new Intent(FindGameActivity.this, GameActivity.class);
+        i.putExtra(Constants.TIPO_DE_JUEGO, 1);
         i.putExtra(Constants.EXTRAS_JUGADA_ID, jugadaId);
         startActivity(i);
         jugadaId = "";
@@ -236,20 +246,64 @@ public class FindGameActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        if(jugadaId != ""){
+        if (jugadaId != "") {
             changeMenuVisibility(false);
             esperarJugador();
-        } else{
+        } else {
             changeMenuVisibility(true);
         }
     }
 
+    private void crearNuevaPartidaContraBot() {
+        binding.textViewLoading.setText("Creando nueva partida");
+        Jugada nuevaJugada = new Jugada(uid);
+
+        db.collection("jugadas")
+                .add(nuevaJugada)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        jugadaId = documentReference.getId();
+                        User computer = new User("Computer", 0, 0);
+                        db.collection("user")
+                                .add(computer)
+                                .addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<DocumentReference> task) {
+                                        String idComp = task.getResult().getId();
+                                        db.collection("jugadas")
+                                                .document(jugadaId)
+                                                .update("jugadorDosId", idComp)
+                                                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                        Intent i = new Intent(FindGameActivity.this, GameActivity.class);
+                                                        i.putExtra(Constants.TIPO_DE_JUEGO, 2);
+                                                        i.putExtra(Constants.EXTRAS_JUGADA_ID, jugadaId);
+                                                        i.putExtra(Constants.EXTRAS_BOT_ID, idComp);
+                                                        startActivity(i);
+                                                        jugadaId = "";
+                                                    }
+                                                });
+                                    }
+                                });
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                changeMenuVisibility(true);
+                Toast.makeText(FindGameActivity.this, "Error creando nueva partida", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FindGameActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
     @Override
     protected void onStop() {
-        if(listenerRegistration != null){
+        if (listenerRegistration != null) {
             listenerRegistration.remove();
         }
-        if(!jugadaId.equals("")){
+        if (!jugadaId.equals("")) {
             db.collection("jugadas")
                     .document(jugadaId)
                     .delete()

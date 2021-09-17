@@ -3,12 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/pvpFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.triqui.tictactoe.ui.fragments.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-    </fragment>
+        android:id="@+id/pvpFragment"
+        android:name="com.triqui.tictactoe.ui.fragments.pvpGameFragment"
+        android:label="PvP game"
+        tools:layout="@layout/fragment_pvp_game" />
+
+    <fragment
+        android:id="@+id/pvcFragment"
+        android:name="com.triqui.tictactoe.ui.fragments.pvcGameFragment"
+        android:label="Player vs Computer"
+        tools:layout="@layout/fragment_pvc_game" />
 </navigation>

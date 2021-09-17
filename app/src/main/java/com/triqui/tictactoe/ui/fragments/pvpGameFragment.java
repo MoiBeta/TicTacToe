@@ -26,16 +26,16 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.ListenerRegistration;
 import com.triqui.tictactoe.R;
 import com.triqui.tictactoe.app.Constants;
-import com.triqui.tictactoe.databinding.FragmentFirstBinding;
+import com.triqui.tictactoe.databinding.FragmentPvpGameBinding;
 import com.triqui.tictactoe.model.User;
 import com.triqui.tictactoe.ui.Jugada;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FirstFragment extends Fragment {
+public class pvpGameFragment extends Fragment {
 
-    private FragmentFirstBinding binding;
+    private FragmentPvpGameBinding binding;
     private List<ImageView> casillas;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore db;
@@ -53,7 +53,7 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = FragmentPvpGameBinding.inflate(inflater, container, false);
         initViews();
         initGame();
         listener = new View.OnClickListener() {
@@ -128,7 +128,7 @@ public class FirstFragment extends Fragment {
     }
 
     private void updatePlayersUI(){
-        if(jugada.isTurnoJuadorUno()){
+        if (jugada.isTurnoJugadorUno()) {
             binding.textviewPlayerOne.setTextColor(getResources().getColor(R.color.dark_green));
             binding.textviewPlayerTwo.setTextColor(getResources().getColor(R.color.gray));
         } else {
@@ -194,13 +194,13 @@ public class FirstFragment extends Fragment {
         if(!jugada.getGanadorId().isEmpty()){
             Toast.makeText(getActivity(), "La partida ha terminado", Toast.LENGTH_SHORT).show();
         } else{
-            if(jugada.isTurnoJuadorUno() && jugada.getJugadorUnoId().equals(uid)){
+            if (jugada.isTurnoJugadorUno() && jugada.getJugadorUnoId().equals(uid)) {
                 //Está jugando el jugador 1
                 actualizarJugada(view.getTag().toString());
-            } else if(!jugada.isTurnoJuadorUno() && jugada.getJugadorDosId().equals(uid)){
+            } else if (!jugada.isTurnoJugadorUno() && jugada.getJugadorDosId().equals(uid)) {
                 //Está jugando el jugador 2
                 actualizarJugada(view.getTag().toString());
-            } else{
+            } else {
                 Toast.makeText(getActivity(), "No es tu turno aún", Toast.LENGTH_SHORT).show();
             }
         }
@@ -212,17 +212,17 @@ public class FirstFragment extends Fragment {
         if(jugada.getCeldasSeleccionadas().get(posicionCasilla) != 0){
             Toast.makeText(getActivity(), "Seleccion una casilla libre", Toast.LENGTH_SHORT).show();
         } else {
-            if (jugada.isTurnoJuadorUno()) {
+            if (jugada.isTurnoJugadorUno()) {
                 casillas.get(posicionCasilla).setImageResource(R.drawable.ic_player_one);
                 jugada.getCeldasSeleccionadas().set(posicionCasilla, 1);
             } else {
                 casillas.get(posicionCasilla).setImageResource(R.drawable.ic_player_two);
                 jugada.getCeldasSeleccionadas().set(posicionCasilla, 2);
             }
-            if(existeEmpate()){
+            if (existeEmpate()) {
                 jugada.setGanadorId("EMPATE");
                 Toast.makeText(getActivity(), "Empate!", Toast.LENGTH_SHORT).show();
-            }else if(existeSolución()){
+            } else if (existeSolución()) {
                 jugada.setGanadorId(uid);
             } else{
                 cambioTurno();
@@ -248,7 +248,7 @@ public class FirstFragment extends Fragment {
 
     private void cambioTurno() {
         //Cambio de turno
-        jugada.setTurnoJuadorUno(!jugada.isTurnoJuadorUno());
+        jugada.setTurnoJugadorUno(!jugada.isTurnoJugadorUno());
     }
 
     private boolean existeSolución(){
