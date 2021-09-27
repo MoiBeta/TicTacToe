@@ -37,20 +37,25 @@
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:backgroundTint="#CCC"
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:background="@drawable/edit_text_shape"
                 android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:backgroundTint="#CCC"
                 android:ems="10"
+                android:gravity="center"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
-                android:background="@drawable/edit_text_shape"
                 android:minHeight="48dp" />
 
             <Button

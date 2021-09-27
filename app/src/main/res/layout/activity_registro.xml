@@ -36,30 +36,36 @@
                 android:id="@+id/editTextName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shape"
+                android:backgroundTint="#CCC"
+                android:gravity="center"
                 android:hint="Nombre"
                 android:inputType="textPersonName"
-                android:background="@drawable/edit_text_shape"
-                android:minHeight="48dp"/>
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:backgroundTint="#CCC"
+                android:gravity="center"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/edit_text_shape" />
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_shape"
+                android:backgroundTint="#CCC"
+                android:gravity="center"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/edit_text_shape" />
+                android:minHeight="48dp" />
 
             <Button
                 android:id="@+id/buttonRegistro"

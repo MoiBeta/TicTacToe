@@ -328,12 +328,6 @@ public class pvpGameFragment extends Fragment {
         TextView tvPuntos = v.findViewById(R.id.textViewPuntos);
         TextView tvInfo = v.findViewById(R.id.textViewInformación);
         LottieAnimationView gameOverAnimation = v.findViewById(R.id.animation_view);
-        builder.setView(v)
-                .setPositiveButton("Salir", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        getActivity().finish();
-                    }
-                });
 
         if (ganadorId.equals("EMPATE")){
             actualizarPuntos(1);
@@ -354,6 +348,11 @@ public class pvpGameFragment extends Fragment {
 // 2. Chain together various setter methods to set the dialog characteristics
         builder.setTitle("Game Over");
         builder.setCancelable(false);
+        builder.setPositiveButton("Salir", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                getActivity().finish();
+            }
+        });
 
 // 3. Get the <code><a href="/reference/android/app/AlertDialog.html">AlertDialog</a></code> from <code><a href="/reference/android/app/AlertDialog.Builder.html#create()">create()</a></code>
         AlertDialog dialog = builder.create();

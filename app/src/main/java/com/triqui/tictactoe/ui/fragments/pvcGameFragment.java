@@ -252,7 +252,7 @@ public class pvcGameFragment extends Fragment {
                 int celdaSeleccionada = computer.getCasillaAJugar(jugada.getCeldasSeleccionadas());
                 casillas.get(celdaSeleccionada).performClick();
             }
-        }, 2000);
+        }, 1000);
     }
 
     private boolean existeSolución() {

@@ -27,6 +27,9 @@
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/fragment_pvc_game.xml" value="0.1" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/layout/item_ranking.xml" value="0.25" />
         <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToc/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/activity_login.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/activity_registro.xml" value="0.11775362318840579" />
+        <entry key="..\:/Users/Moises/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/dialog_game_over.xml" value="0.22083333333333333" />
       </map>
     </option>
   </component>
